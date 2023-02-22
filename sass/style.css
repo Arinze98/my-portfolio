@@ -383,6 +383,140 @@ p {
   transform: scale(1.1);
 }
 
+.skill_container {
+  width: 100vw;
+  min-height: 100vh;
+  height: -moz-max-content;
+  height: max-content;
+  padding-top: 7rem;
+}
+.skill_container h2 {
+  text-align: center;
+}
+.skill_container h2 span {
+  color: #F26659;
+}
+.skill_container .skill_level {
+  width: 90vw;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 8rem auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.skill_container .skill_level .skill_levelContainer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.skill_container .skill_level .skill_levelContainer .skill {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+.skill_container .skill_level .skill_levelContainer .skill .outer {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.skill_container .skill_level .skill_levelContainer .skill .outer .inner {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgb(255, 255, 255), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+.skill_container .skill_level .skill_levelContainer .skill .outer .inner #number {
+  font-weight: 600;
+  color: #555;
+}
+.skill_container .skill_level .skill_levelContainer .skill svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.skill_container .skill_level .skill_levelContainer .skill svg circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  animation: anim 2s linear forwards;
+}
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 44;
+  }
+}
+.skill_container .skill_level .skill_levelContainer .skill .css {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.skill_container .skill_level .skill_levelContainer .skill .css circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  animation: css 2s linear forwards;
+}
+@keyframes css {
+  100% {
+    stroke-dashoffset: 115;
+  }
+}
+.skill_container .skill_level .skill_levelContainer .skill .sass {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.skill_container .skill_level .skill_levelContainer .skill .sass circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  animation: sass 2s linear forwards;
+}
+@keyframes sass {
+  100% {
+    stroke-dashoffset: 44;
+  }
+}
+.skill_container .skill_level .skill_levelContainer .skill .js {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.skill_container .skill_level .skill_levelContainer .skill .js circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  animation: js 2s linear forwards;
+}
+@keyframes js {
+  100% {
+    stroke-dashoffset: 220;
+  }
+}
+.skill_container .skill_level .skill_levelContainer p {
+  text-align: center;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+}
+
 @media (min-width: 800px) {
   .home header .logo_icon .logo h3 {
     font-size: 2.2rem;
@@ -480,5 +614,9 @@ p {
   }
   .about .image_content .content_container p {
     width: 80%;
+  }
+  .skill_container .skill_level {
+    width: 70vw;
+    margin-top: 10rem;
   }
 }/*# sourceMappingURL=style.css.map */

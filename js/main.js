@@ -30,3 +30,51 @@ window.addEventListener('scroll', ()=> {
         header.style.boxShadow ='none'
     }
 })
+
+//skill bars
+const numEl = document.getElementById('number')
+let counter = 0
+setInterval(()=> {
+    if(counter == 90) {
+        clearInterval()
+    }else{
+        counter += 1
+        numEl.innerHTML = counter + "%"
+    }
+}, 22)
+
+// css 
+const cssEl = document.querySelector('.cssNumber')
+let cssCon = 0
+setInterval(()=> {
+    if(cssCon == 75) {
+        clearInterval()
+    }else{
+        cssCon += 1
+        cssEl.innerHTML = cssCon + "%"
+    }
+}, 26)
+
+// sass 
+const sassEl = document.querySelector('.sassNumber')
+let sassCon = 0
+setInterval(()=> {
+    if(sassCon == 90) {
+        clearInterval()
+    }else{
+        sassCon += 1
+        sassEl.innerHTML = sassCon + "%"
+    }
+}, 22)
+
+// js 
+const jsEl = document.querySelector('.jsNumber')
+let jsCon = 0
+setInterval(()=> {
+    if(jsCon == 50) {
+        clearInterval()
+    }else{
+        jsCon += 1
+        jsEl.innerHTML = jsCon + "%"
+    }
+}, 38)

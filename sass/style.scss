@@ -331,6 +331,153 @@ h1 {
         }
     }
 }
+// ----------skill-------------
+.skill_container{
+    width: 100vw;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 7rem;
+
+    h2{
+        text-align: center;
+
+        span{
+            color: $secondary_color;
+        }
+    }
+
+    .skill_level{
+        width: 90vw;
+        height: max-content;
+        margin: 8rem auto;
+        @include grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+        .skill_levelContainer{
+            @include grid;
+            gap: .5rem;
+            .skill{
+                width: 160px;
+                height: 160px;
+                // background: salmon;
+                position: relative;
+    
+                .outer{
+                    width: 160px;
+                    height: 160px;
+                    border-radius: 50%;
+                    padding: 20px;
+                    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    
+                    .inner{
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 50%;
+                        @include flex;
+                        box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                                    inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                                    -0.5px -0.5px 0px rgba(255,255,255,1),
+                                    0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                                    0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+                        
+                        #number{
+                            font-weight: 600;
+                            color: #555;
+                        }            
+                    }
+                }
+                svg{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+    
+                    circle{
+                        fill: none;
+                        stroke: url(#GradientColor);
+                        stroke-width: 20px;
+                        stroke-dasharray: 440;
+                        stroke-dashoffset: 440;
+                        animation: anim 2s linear forwards;
+                    }
+    
+                    @keyframes anim {
+                        100%{
+                            stroke-dashoffset: 44;
+                        }
+                    }
+                }
+                .css{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+    
+                    circle{
+                        fill: none;
+                        stroke: url(#GradientColor);
+                        stroke-width: 20px;
+                        stroke-dasharray: 440;
+                        stroke-dashoffset: 440;
+                        animation: css 2s linear forwards;
+                    }
+    
+                    @keyframes css {
+                        100%{
+                            stroke-dashoffset: 115;
+                        }
+                    }
+                }
+                .sass{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+    
+                    circle{
+                        fill: none;
+                        stroke: url(#GradientColor);
+                        stroke-width: 20px;
+                        stroke-dasharray: 440;
+                        stroke-dashoffset: 440;
+                        animation: sass 2s linear forwards;
+                    }
+    
+                    @keyframes sass {
+                        100%{
+                            stroke-dashoffset: 44;
+                        }
+                    }
+                }
+                .js{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+    
+                    circle{
+                        fill: none;
+                        stroke: url(#GradientColor);
+                        stroke-width: 20px;
+                        stroke-dasharray: 440;
+                        stroke-dashoffset: 440;
+                        animation: js 2s linear forwards;
+                    }
+    
+                    @keyframes js {
+                        100%{
+                            stroke-dashoffset: 220;
+                        }
+                    }
+                }
+            }
+            p{
+                text-align: center;
+                font-weight: 600;
+                color: #555;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
 // ------------------media 800px------------------
 @media (min-width: 800px) {
     .home{
@@ -490,6 +637,15 @@ h1 {
                     width: 80%;
                 }
             }
+        }
+    }
+
+    //------------skill-----------------
+    .skill_container{
+
+        .skill_level{
+            width: 70vw;
+            margin-top: 10rem;
         }
     }
 }
