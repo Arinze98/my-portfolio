@@ -1,0 +1,473 @@
+body {
+  font-family: var(--ff-secondary);
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+@font-face {
+  font-family: ff-primary;
+  src: url(/fonts/arial.ttf);
+}
+@font-face {
+  font-family: ff-primary2;
+  src: url(/fonts/arialbd.ttf);
+}
+@font-face {
+  font-family: ff-secondary;
+  src: url(/fonts/SansSerifCollection.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: ff-secondary;
+  background: #F0EFF4;
+  color: #000000;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: ff-primary;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: #000000;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+.home {
+  width: 100vw;
+  height: 100vh;
+}
+.home header {
+  width: 100vw;
+  height: 7vh;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 1rem;
+  background: #F0EFF4;
+  z-index: 2;
+  overflow: hidden;
+  transition: all ease-in-out;
+}
+.home header .logo_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.home header .logo_icon .logo h3 {
+  padding-top: 0.9rem;
+}
+.home header .logo_icon .logo h3 span {
+  color: #F26659;
+}
+.home header .logo_icon .icon .bi {
+  font-size: 2rem;
+}
+.home header nav {
+  overflow: hidden;
+  height: 0;
+}
+.home header nav ul {
+  list-style-type: none;
+  display: grid;
+  gap: 0.5rem;
+}
+.home header nav ul a {
+  text-decoration: none;
+}
+.home header nav ul a li {
+  width: 100vw;
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 400;
+  cursor: pointer;
+}
+.home header nav ul a li:hover {
+  border-bottom: 2px solid #F26659;
+}
+.home header .navShow {
+  overflow: visible;
+  height: -moz-max-content;
+  height: max-content;
+}
+.home .headerFixed {
+  position: fixed;
+}
+.home article {
+  width: 90vw;
+  margin: 0 auto;
+  padding-top: 7rem;
+}
+.home article .hello {
+  font-size: 1.2rem;
+  font-family: ff-secondary;
+  text-transform: capitalize;
+}
+.home article .hello span {
+  padding: 0.5rem 1.5rem;
+  background-color: #F26659;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  font-family: ff-primary2;
+}
+.home article h1, .home article h2 {
+  font-family: sans-serif;
+}
+.home article p {
+  font-size: 1.2rem;
+}
+.home article .button {
+  margin-top: 4rem;
+}
+.home article .button a button {
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.3rem;
+  font-family: ff-primary2;
+  text-transform: capitalize;
+  background-color: #F26659;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.home article .button a button:hover {
+  transform: scale(1.1);
+}
+
+.about {
+  width: 100vw;
+  min-height: 100vh;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
+.about .image_content {
+  width: 90vw;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+  justify-content: space-between;
+  margin: 1rem auto;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.about .image_content .image {
+  order: 2;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/image/arinze.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about .image_content .content_container h1 span {
+  color: #F26659;
+}
+.about .image_content .content_container h3 {
+  font-family: ff-primary2;
+}
+.about .image_content .content_container p {
+  margin-top: 2rem;
+  font-family: ff-primary;
+}
+.about .image_content .content_container .button {
+  margin-top: 2rem;
+}
+.about .image_content .content_container .button a button {
+  width: 7rem;
+  height: 2rem;
+  font-size: 1rem;
+  font-family: ff-primary2;
+  text-transform: capitalize;
+  background-color: #F26659;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.about .image_content .content_container .button a button:hover {
+  transform: scale(1.1);
+}
+
+.service {
+  width: 100vw;
+  min-height: 100vh;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  padding-top: 7rem;
+}
+.service p {
+  text-align: center;
+  font-family: ff-primary;
+}
+.service .heading {
+  text-align: center;
+}
+.service .heading span {
+  color: #F26659;
+}
+.service .container {
+  width: 90vw;
+  max-width: 500px;
+  margin: 5rem auto;
+  padding: 2rem 2.5rem;
+  background-color: #e2e2e2;
+  display: grid;
+  gap: 1rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.service .container .logo .bi-code-slash {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.service .container h3 {
+  letter-spacing: 0;
+}
+.service .container p {
+  text-align: start;
+}
+.service .container button {
+  width: 7rem;
+  height: 2rem;
+  font-size: 1rem;
+  font-family: ff-primary2;
+  text-transform: capitalize;
+  background-color: #F0EFF4;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.service .container button:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 800px) {
+  .home header .logo_icon .logo h3 {
+    font-size: 2.2rem;
+  }
+  .home header .logo_icon .icon .bi {
+    font-size: 2.2rem;
+  }
+  .home header nav ul a li {
+    font-size: 1.2rem;
+  }
+  .home article .hello {
+    font-size: 2rem;
+  }
+  .home article .hello span {
+    font-size: 1.5rem;
+  }
+  .home article h1 {
+    font-size: 6rem;
+  }
+  .home article h2 {
+    font-size: 4rem;
+  }
+  .home article p {
+    font-size: 1.5rem;
+  }
+  .home article .button {
+    margin-top: 4rem;
+  }
+  .home article .button a button {
+    width: 12rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    font-family: ff-primary2;
+    text-transform: capitalize;
+    background-color: #F26659;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+}
+@media (min-width: 920px) {
+  .about .image_content {
+    width: 80vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 1rem auto;
+  }
+  .about .image_content .image {
+    order: 2;
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/arinze.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .about .image_content .content_container {
+    order: 2;
+    padding-top: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .home header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .home header .logo_icon {
+    width: 20%;
+  }
+  .home header .logo_icon .icon {
+    display: none;
+  }
+  .home header nav {
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .home header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home header nav ul a li {
+    width: -moz-max-content;
+    width: max-content;
+    padding: 0 1rem;
+  }
+  .home article {
+    width: 70%;
+  }
+}/*# sourceMappingURL=style.css.map */
