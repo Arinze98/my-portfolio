@@ -218,7 +218,7 @@ h1 {
             order: 2;
             width: 100%;
             height: 100vh;
-            background-image: url(/image/arinze.JPG);
+            background-image: url(/image/arinze\ 2.JPG);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -238,9 +238,6 @@ h1 {
                     color: $secondary_color;
                 }
             }
-            // h3{
-            //     font-family: ff-primary2;
-            // }
            p{
             margin-top: 2rem;
             font-family: ff-primary;
@@ -428,7 +425,6 @@ h1 {
                 order: 2;
                 width: 100%;
                 height: 100%;
-                background-image: url(/image/arinze.JPG);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -476,30 +472,24 @@ h1 {
 
         article{
             width: 70%;
+
+            p{
+                width: 50%;
+            }
         }
     }
 
     // --------------about--------------
-    // .about{
-        
-    //     .image_content{
-    //         grid-template-columns: repeat(2, 1fr);
-    //         width: 70vw;
-    //         gap: 5rem;
+    .about{
 
-    //         .image{
-    //             // max-width: 530px;
-    //             // width: 100%;
-    //             // height: auto;
+        .image_content{
 
-    //             img{
-    //                 object-fit: contain;
-    //                 width: 100%;
-    //             }
-    //         }
-    //         .content_container{
-    //             padding-top: 7rem;
-    //         }
-    //     } 
-    // }
+            .content_container{
+
+                p{
+                    width: 80%;
+                }
+            }
+        }
+    }
 }
