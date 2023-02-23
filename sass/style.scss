@@ -75,7 +75,8 @@ h1 {
 
 .home{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: max-content;
 
     header{
         width: 100vw;
@@ -149,6 +150,7 @@ h1 {
         width: 90vw;
         margin: 0 auto;
         padding-top: 7rem;
+        height: max-content;
 
         .hello{
             font-size: 1.2rem;

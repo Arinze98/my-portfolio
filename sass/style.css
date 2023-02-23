@@ -164,7 +164,9 @@ p {
 }
 .home {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: -moz-max-content;
+  height: max-content;
 }
 .home header {
   width: 100vw;
@@ -227,6 +229,8 @@ p {
   width: 90vw;
   margin: 0 auto;
   padding-top: 7rem;
+  height: -moz-max-content;
+  height: max-content;
 }
 .home article .hello {
   font-size: 1.2rem;
