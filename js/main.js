@@ -18,6 +18,7 @@ linksEl.forEach((link)=> {
 window.addEventListener('scroll', ()=> {
     const header = document.querySelector('header')
     const headerHeight = header.getBoundingClientRect().height
+    const to_top = document.querySelector('.to_top')
 
     const scrollHeight = window.pageYOffset
 
@@ -29,6 +30,20 @@ window.addEventListener('scroll', ()=> {
         header.classList.remove('headerFixed')
         header.style.boxShadow ='none'
     }
+
+    // scrole to_top 
+    if (scrollHeight > 500) {
+        to_top.classList.add('show_to_top')
+    }else {
+        to_top.classList.remove('show_to_top')
+    }
+})
+
+// cv 
+const cvEl = document.querySelector('.cv')
+
+cvEl.addEventListener('click', ()=> {
+    alert('CV will be up loaded soon')
 })
 
 //skill bars

@@ -188,6 +188,7 @@ h1 {
                     cursor: pointer;
                     color: black;
                     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                    transition: .3s all ease-in-out;
                 }
                 button:hover{
                     transform: scale(1.1);
@@ -478,6 +479,164 @@ h1 {
         }
     }
 }
+// -----------contact-----------------
+.contact{
+    width: 100vw;
+    min-height: 100vh;
+    height: max-content;
+    padding-top: 10rem;
+
+    .contact_container{
+        width: 90vw;
+        margin: 0 auto;
+        
+        .container{
+            display: grid;
+            gap: 1rem;
+            height: max-content;
+
+            h2{
+                text-align: start;
+
+                span{
+                    color: $secondary_color;
+                }
+            }
+            h4{
+                letter-spacing: 0;
+                font-size: .9rem;
+            }
+            p{
+                text-align: start;
+                font-family: ff-primary;
+            }
+            .reach{
+                text-align: start;
+                font-family: ff-primary;
+            }
+            .icons{
+                margin-top: 1rem;
+                display: flex;
+                gap: 1rem;
+
+                a{
+                    text-decoration: none;
+                    transition: .3s all ease-in-out;
+
+                    .bi{
+                        font-size: 1.3rem;
+                        padding: .1rem 1rem;
+                        border-radius: .3rem;
+                        color: black;
+                        background-color:  $secondary_color;
+                        transition: color .2s;
+                    }
+                    .bi-twitter:hover{
+                        color: #1DA1F2;
+                    }
+                    .bi-instagram:hover{
+                        color: rgb(228, 64, 95);
+                    }
+                    .bi-facebook:hover{
+                        color:#4267B2;
+                    }
+                }
+                a:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .img{
+            display: none;
+            width: 400px;
+            height: 400px;
+            background-image: url(/image/contact.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    }
+}
+
+// -------to top 
+.to_top{
+    position: fixed;
+    top: 85%;
+    left: 80%;
+    visibility: hidden;
+    
+    a{
+        
+        button{
+            border: none;
+            background-color: $secondary_color;
+            width: 3rem;
+            height: 3rem;
+            padding: .5rem;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            animation: bounce 2s ease-in-out infinite;
+            
+            i{
+                font-size: 2rem;
+                color: $primary_color2;
+            }
+       }
+       @keyframes bounce {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+       }
+    }
+}
+.show_to_top{
+    visibility: visible;
+}
+// -------fixed git---------- 
+.fixed_git{
+    position: fixed;
+    top: 20%;
+    right: 90%;
+    // visibility: hidden;
+    
+    a{
+        
+        button{
+            border: none;
+            width: 2rem;
+            height: 2rem;
+            padding: .5rem;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            animation: bounce 2s ease-in-out infinite;
+            
+            i{
+                font-size: 1rem;
+                color: $primary_color2;
+            }
+       }
+       @keyframes bounce {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+       }
+    }
+}
+
 // ------------------media 800px------------------
 @media (min-width: 800px) {
     .home{
@@ -552,8 +711,29 @@ h1 {
             }
         }
     }
+    //    to top---------
+    .to_top{
+        left: 90%;
+        top: 90%;
 
-    
+    } 
+    //    to top---------
+    .fixed_git{
+        right: 95%;
+        top: 30%;
+
+        a{
+
+            button{
+                width: 3rem;
+                height: 3rem;
+
+                i{
+                    font-size: 2rem;
+                }
+            }
+        }
+    } 
 }
 
 // -----------media 920px----------------
@@ -646,6 +826,22 @@ h1 {
         .skill_level{
             width: 70vw;
             margin-top: 10rem;
+        }
+    }
+
+    // ---------------contact------------
+    .contact{
+        padding-top: 15rem;
+        .contact_container{
+            width: 70vw;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4rem;
+
+            .img{
+                display: block;
+                // margin: 1rem auto;
+            }
         }
     }
 }

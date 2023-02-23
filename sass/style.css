@@ -264,6 +264,7 @@ p {
   cursor: pointer;
   color: black;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: 0.3s all ease-in-out;
 }
 .home article .button a button:hover {
   transform: scale(1.1);
@@ -517,6 +518,148 @@ p {
   text-transform: uppercase;
 }
 
+.contact {
+  width: 100vw;
+  min-height: 100vh;
+  height: -moz-max-content;
+  height: max-content;
+  padding-top: 10rem;
+}
+.contact .contact_container {
+  width: 90vw;
+  margin: 0 auto;
+}
+.contact .contact_container .container {
+  display: grid;
+  gap: 1rem;
+  height: -moz-max-content;
+  height: max-content;
+}
+.contact .contact_container .container h2 {
+  text-align: start;
+}
+.contact .contact_container .container h2 span {
+  color: #F26659;
+}
+.contact .contact_container .container h4 {
+  letter-spacing: 0;
+  font-size: 0.9rem;
+}
+.contact .contact_container .container p {
+  text-align: start;
+  font-family: ff-primary;
+}
+.contact .contact_container .container .reach {
+  text-align: start;
+  font-family: ff-primary;
+}
+.contact .contact_container .container .icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.contact .contact_container .container .icons a {
+  text-decoration: none;
+  transition: 0.3s all ease-in-out;
+}
+.contact .contact_container .container .icons a .bi {
+  font-size: 1.3rem;
+  padding: 0.1rem 1rem;
+  border-radius: 0.3rem;
+  color: black;
+  background-color: #F26659;
+  transition: color 0.2s;
+}
+.contact .contact_container .container .icons a .bi-twitter:hover {
+  color: #1DA1F2;
+}
+.contact .contact_container .container .icons a .bi-instagram:hover {
+  color: rgb(228, 64, 95);
+}
+.contact .contact_container .container .icons a .bi-facebook:hover {
+  color: #4267B2;
+}
+.contact .contact_container .container .icons a:hover {
+  transform: scale(1.1);
+}
+.contact .contact_container .img {
+  display: none;
+  width: 400px;
+  height: 400px;
+  background-image: url(/image/contact.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.to_top {
+  position: fixed;
+  top: 85%;
+  left: 80%;
+  visibility: hidden;
+}
+.to_top a button {
+  border: none;
+  background-color: #F26659;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  animation: bounce 2s ease-in-out infinite;
+}
+.to_top a button i {
+  font-size: 2rem;
+  color: #100c0d;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.show_to_top {
+  visibility: visible;
+}
+
+.fixed_git {
+  position: fixed;
+  top: 20%;
+  right: 90%;
+}
+.fixed_git a button {
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  animation: bounce 2s ease-in-out infinite;
+}
+.fixed_git a button i {
+  font-size: 1rem;
+  color: #100c0d;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @media (min-width: 800px) {
   .home header .logo_icon .logo h3 {
     font-size: 2.2rem;
@@ -555,6 +698,21 @@ p {
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
+  }
+  .to_top {
+    left: 90%;
+    top: 90%;
+  }
+  .fixed_git {
+    right: 95%;
+    top: 30%;
+  }
+  .fixed_git a button {
+    width: 3rem;
+    height: 3rem;
+  }
+  .fixed_git a button i {
+    font-size: 2rem;
   }
 }
 @media (min-width: 920px) {
@@ -618,5 +776,17 @@ p {
   .skill_container .skill_level {
     width: 70vw;
     margin-top: 10rem;
+  }
+  .contact {
+    padding-top: 15rem;
+  }
+  .contact .contact_container {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+  .contact .contact_container .img {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
