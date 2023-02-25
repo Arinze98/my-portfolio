@@ -164,7 +164,7 @@ p {
 }
 .home {
   width: 100vw;
-  min-height: 80vh;
+  min-height: 70vh;
   height: -moz-max-content;
   height: max-content;
 }

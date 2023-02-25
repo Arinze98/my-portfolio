@@ -75,7 +75,7 @@ h1 {
 
 .home{
     width: 100vw;
-    min-height: 80vh;
+    min-height: 70vh;
     height: max-content;
 
     header{
@@ -361,7 +361,7 @@ h1 {
 
         .skill_levelContainer{
             @include grid;
-            gap: .5rem;
+            gap: .5rem;           
             .skill{
                 width: 160px;
                 height: 160px;
