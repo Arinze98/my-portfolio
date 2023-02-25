@@ -75,7 +75,7 @@ h1 {
 
 .home{
     width: 100vw;
-    min-height: 100vh;
+    min-height: 80vh;
     height: max-content;
 
     header{
@@ -202,8 +202,8 @@ h1 {
 // -------about------------
 .about{
     width: 100vw;
-    min-height: 100vh;
-    max-height: max-content;
+    min-height: 80vh;
+    height: max-content;
     padding-top: 7rem;
     padding-bottom: 5rem;
     
@@ -252,8 +252,8 @@ h1 {
                 text-decoration: none;
 
                 button{
-                    width: 7rem;
-                    height: 2rem;
+                    width: 8rem;
+                    height: 2.5rem;
                     font-size: 1rem;
                     font-family: ff-primary2;
                     text-transform: capitalize;
@@ -275,13 +275,15 @@ h1 {
 // --------service----------
 .service{
     width: 100vw;
-    min-height: 100vh;
-    max-height: max-content;
+    min-height: 80vh;
+    height: max-content;
     padding-top: 7rem;
 
     p{
         text-align: center;
         font-family: ff-primary;
+        font-size: 1rem;
+        font-weight: 600;
     }
     .heading{
         text-align: center;
@@ -337,7 +339,7 @@ h1 {
 // ----------skill-------------
 .skill_container{
     width: 100vw;
-    min-height: 100vh;
+    min-height: 40vh;
     height: max-content;
     padding-top: 7rem;
 
@@ -352,7 +354,7 @@ h1 {
     .skill_level{
         width: 90vw;
         height: max-content;
-        margin: 8rem auto;
+        margin: 6rem auto;
         @include grid;
         gap: 1rem;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -484,12 +486,13 @@ h1 {
 // -----------contact-----------------
 .contact{
     width: 100vw;
-    min-height: 100vh;
+    min-height: 80vh;
     height: max-content;
-    padding-top: 10rem;
+    padding-top: 5rem;
 
     .contact_container{
         width: 90vw;
+        height: max-content;
         margin: 0 auto;
         
         .container{
@@ -507,6 +510,7 @@ h1 {
             h4{
                 letter-spacing: 0;
                 font-size: .9rem;
+                text-transform: none;
             }
             p{
                 text-align: start;
@@ -542,6 +546,9 @@ h1 {
                     .bi-facebook:hover{
                         color:#4267B2;
                     }
+                    .bi-linkedin:hover{
+                        color:#4267B2;
+                    }
                 }
                 a:hover{
                     transform: scale(1.1);
@@ -557,6 +564,21 @@ h1 {
             background-size: contain;
             background-position: center;
         }
+    }
+}
+
+// -------footer 
+footer{
+    height: 10vh;
+    background-color: $nav_color;
+    @include grid;
+
+    p{
+        // @include p-mobile;
+        color: $font_color3;
+        letter-spacing: .1em;
+        text-align: center;
+        text-transform: capitalize;
     }
 }
 
@@ -744,7 +766,7 @@ h1 {
 
         .image_content{
             width: 80vw;
-            height: 70vh;
+            height: 700px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
@@ -833,7 +855,7 @@ h1 {
 
     // ---------------contact------------
     .contact{
-        padding-top: 15rem;
+        padding-top: 10rem;
         .contact_container{
             width: 70vw;
             display: grid;

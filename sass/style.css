@@ -164,7 +164,7 @@ p {
 }
 .home {
   width: 100vw;
-  min-height: 100vh;
+  min-height: 80vh;
   height: -moz-max-content;
   height: max-content;
 }
@@ -276,9 +276,9 @@ p {
 
 .about {
   width: 100vw;
-  min-height: 100vh;
-  max-height: -moz-max-content;
-  max-height: max-content;
+  min-height: 80vh;
+  height: -moz-max-content;
+  height: max-content;
   padding-top: 7rem;
   padding-bottom: 5rem;
 }
@@ -317,8 +317,8 @@ p {
   text-decoration: none;
 }
 .about .image_content .content_container .button a button {
-  width: 7rem;
-  height: 2rem;
+  width: 8rem;
+  height: 2.5rem;
   font-size: 1rem;
   font-family: ff-primary2;
   text-transform: capitalize;
@@ -335,14 +335,16 @@ p {
 
 .service {
   width: 100vw;
-  min-height: 100vh;
-  max-height: -moz-max-content;
-  max-height: max-content;
+  min-height: 80vh;
+  height: -moz-max-content;
+  height: max-content;
   padding-top: 7rem;
 }
 .service p {
   text-align: center;
   font-family: ff-primary;
+  font-size: 1rem;
+  font-weight: 600;
 }
 .service .heading {
   text-align: center;
@@ -390,7 +392,7 @@ p {
 
 .skill_container {
   width: 100vw;
-  min-height: 100vh;
+  min-height: 40vh;
   height: -moz-max-content;
   height: max-content;
   padding-top: 7rem;
@@ -405,7 +407,7 @@ p {
   width: 90vw;
   height: -moz-max-content;
   height: max-content;
-  margin: 8rem auto;
+  margin: 6rem auto;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -524,13 +526,15 @@ p {
 
 .contact {
   width: 100vw;
-  min-height: 100vh;
+  min-height: 80vh;
   height: -moz-max-content;
   height: max-content;
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 .contact .contact_container {
   width: 90vw;
+  height: -moz-max-content;
+  height: max-content;
   margin: 0 auto;
 }
 .contact .contact_container .container {
@@ -548,6 +552,7 @@ p {
 .contact .contact_container .container h4 {
   letter-spacing: 0;
   font-size: 0.9rem;
+  text-transform: none;
 }
 .contact .contact_container .container p {
   text-align: start;
@@ -583,6 +588,9 @@ p {
 .contact .contact_container .container .icons a .bi-facebook:hover {
   color: #4267B2;
 }
+.contact .contact_container .container .icons a .bi-linkedin:hover {
+  color: #4267B2;
+}
 .contact .contact_container .container .icons a:hover {
   transform: scale(1.1);
 }
@@ -594,6 +602,20 @@ p {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+footer {
+  height: 10vh;
+  background-color: #344648;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: white;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .to_top {
@@ -722,7 +744,7 @@ p {
 @media (min-width: 920px) {
   .about .image_content {
     width: 80vw;
-    height: 70vh;
+    height: 700px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
@@ -782,7 +804,7 @@ p {
     margin-top: 10rem;
   }
   .contact {
-    padding-top: 15rem;
+    padding-top: 10rem;
   }
   .contact .contact_container {
     width: 70vw;

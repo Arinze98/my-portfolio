@@ -93,3 +93,11 @@ setInterval(()=> {
         jsEl.innerHTML = jsCon + "%"
     }
 }, 38)
+
+// footer date 
+const footerDate = document.getElementById('date')
+
+const curDate = new Date()
+footerDate.innerHTML = curDate.toLocaleString('eng', {
+    year: 'numeric'
+})
