@@ -75,7 +75,7 @@ h1 {
 
 .home{
     width: 100vw;
-    min-height: 70vh;
+    min-height: 60vh;
     height: max-content;
 
     header{
@@ -149,7 +149,7 @@ h1 {
     article{
         width: 90vw;
         margin: 0 auto;
-        padding-top: 7rem;
+        padding-top: 3rem;
         height: max-content;
 
         .hello{
@@ -202,10 +202,10 @@ h1 {
 // -------about------------
 .about{
     width: 100vw;
-    min-height: 80vh;
+    min-height: 60vh;
     height: max-content;
-    padding-top: 7rem;
-    padding-bottom: 5rem;
+    // padding-top: 7rem;
+    // padding-bottom: 5rem;
     
     .image_content{
         width: 90vw;
@@ -275,9 +275,9 @@ h1 {
 // --------service----------
 .service{
     width: 100vw;
-    min-height: 80vh;
+    min-height: max-content;
     height: max-content;
-    padding-top: 7rem;
+    // padding-top: 7rem;
 
     p{
         text-align: center;
@@ -341,7 +341,7 @@ h1 {
     width: 100vw;
     min-height: 40vh;
     height: max-content;
-    padding-top: 7rem;
+    // padding-top: 7rem;
 
     h2{
         text-align: center;
@@ -354,7 +354,7 @@ h1 {
     .skill_level{
         width: 90vw;
         height: max-content;
-        margin: 6rem auto;
+        margin: 2rem auto;
         @include grid;
         gap: 1rem;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -362,6 +362,7 @@ h1 {
         .skill_levelContainer{
             @include grid;
             gap: .5rem;           
+            
             .skill{
                 width: 160px;
                 height: 160px;
@@ -486,9 +487,7 @@ h1 {
 // -----------contact-----------------
 .contact{
     width: 100vw;
-    min-height: 80vh;
-    height: max-content;
-    padding-top: 5rem;
+    min-height: max-content;
 
     .contact_container{
         width: 90vw;
@@ -521,7 +520,8 @@ h1 {
                 font-family: ff-primary;
             }
             .icons{
-                margin-top: 1rem;
+                // margin-top: 1rem;
+                height: max-content;
                 display: flex;
                 gap: 1rem;
 
@@ -569,16 +569,19 @@ h1 {
 
 // -------footer 
 footer{
-    height: 10vh;
+    height: max-content;
     background-color: $nav_color;
     @include grid;
+    margin-top: 2rem;
 
     p{
-        // @include p-mobile;
         color: $font_color3;
         letter-spacing: .1em;
         text-align: center;
         text-transform: capitalize;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 1rem;
     }
 }
 
@@ -588,7 +591,7 @@ footer{
     top: 85%;
     left: 80%;
     visibility: hidden;
-    
+
     a{
         
         button{
@@ -735,6 +738,10 @@ footer{
             }
         }
     }
+    // contact-------
+    .contact{
+        padding-top: 3rem;
+    }
     //    to top---------
     .to_top{
         left: 90%;
@@ -770,7 +777,6 @@ footer{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
-            margin: 1rem auto;
 
             .image{
                 order: 2;
@@ -849,13 +855,11 @@ footer{
 
         .skill_level{
             width: 70vw;
-            margin-top: 10rem;
         }
     }
 
     // ---------------contact------------
     .contact{
-        padding-top: 10rem;
         .contact_container{
             width: 70vw;
             display: grid;
@@ -864,7 +868,6 @@ footer{
 
             .img{
                 display: block;
-                // margin: 1rem auto;
             }
         }
     }

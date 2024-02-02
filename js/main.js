@@ -39,13 +39,6 @@ window.addEventListener('scroll', ()=> {
     }
 })
 
-// cv 
-const cvEl = document.querySelector('.cv')
-
-cvEl.addEventListener('click', ()=> {
-    alert('CV will be up loaded soon')
-})
-
 //skill bars
 const numEl = document.getElementById('number')
 let counter = 0
